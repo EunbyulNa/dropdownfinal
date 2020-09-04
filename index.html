@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Drop down</title>
+    <style media="screen">
+      * {
+        margin: 0;
+        padding: 0;
+
+      }
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      #wrap {
+        width: 980px;
+        margin: auto;
+      }
+
+      nav {
+        background: gray;
+        height: 80px;
+        padding: 10px;
+        position: relative;
+      }
+
+      .gnb { float:left;
+
+      }
+
+      .gnb > li {
+        margin: 10px;
+        width: 90px;
+        height: 30px;
+      }
+
+      .gnb >li> a {
+        font-size: 25px;
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+        background: black;
+
+        padding: 10px;
+      color: white;
+      }
+
+      .gnb > li > a :hover {
+        background: black;
+        color: white;
+      }
+
+
+      .sub {
+        background-color: red;
+        width: 200px;
+        position: absolute;
+        display: none;
+      }
+
+      .gnb > li:hover ul.sub{
+        display: block;
+      }
+
+
+      .sub a {
+       color: white;
+       line-height: 30px;
+       display: block;
+       padding-left: 15px;
+      }
+      .sub a:hover {
+        background-color: yellow;
+
+      }
+
+      section {
+        background: darkgray;
+      }
+
+      section p {
+        padding: 20px;
+      }
+
+.drop_img {float:right;
+          width: 100px;
+          height: 30px;
+          margin-top: 3px;
+          margin-right: 10px;
+          padding: 10px;
+        }
+
+.btn {
+      font-size: 25px;
+      border-radius: 5px;
+      display: block;
+      text-align: center;
+      background: black;
+      padding: 10px;
+    color: white;
+    border: 0;
+    cursor: pointer;
+
+width:100px;
+    }
+
+
+
+.drop_img img{width: 300px;
+              position: absolute;
+             right:0px;
+             top: 70px;
+           display: none;}
+
+.drop_img:hover img {
+  display:block;
+
+}
+
+.drop_img img:hover {
+  opacity: 0.8;
+}
+
+    </style>
+  </head>
+  <body>
+  <div id="wrap">
+    <nav>
+      <ul class="gnb">
+        <li><a href="#">menu</a>
+          <ul class="sub">
+             <li><a href="#">sub_01</a></li>
+             <li><a href="#">sub_01</a></li>
+             <li><a href="#">sub_01</a></li>
+             <li><a href="#">sub_01</a></li>
+           </ul>
+
+
+        </li>
+      </ul>
+      <div class="drop_img">
+        <button class="btn">IMAGE</button>
+        <img src="logog.jpg" alt="">
+      </div>
+    </nav>
+
+  <section>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+
+  </section>
+  </div>
+  </body>
+</html>
